@@ -15,7 +15,7 @@ var majorityElement2 = function(nums) {
             const elementCount = map.get(num);
             map.set(num, elementCount + 1);
             
-            if(maxCount > elementCount + 1)
+            if(maxCount < elementCount + 1)
             {
                 majorityElement = num;
                 maxCount = elementCount + 1;
